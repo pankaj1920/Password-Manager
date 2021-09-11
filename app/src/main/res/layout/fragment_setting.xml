@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.dashboard.setting.SettingFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Text.Bold.Large.TextColor"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLines="1"
+        android:text="@string/generate_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGenTxt"
+        style="@style/Text.Bold.xSmall.Grey.TextColor"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/generated_password"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvGeneratedPassword"
+        style="@style/Text.Bold.Regular.White.TextColor"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:background="@drawable/corner_background"
+        android:gravity="center"
+        android:text="@string/sample_password"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGenTxt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLen"
+        style="@style/Text.Bold.Small.TextColor"
+        android:layout_width="@dimen/standard_0"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/length"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/tvGeneratedPassword"
+        app:layout_constraintStart_toStartOf="@id/tvGeneratedPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvGeneratedPassword" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLengthLayout"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/corner_background"
+        app:layout_constraintEnd_toEndOf="@id/tvGeneratedPassword"
+        app:layout_constraintStart_toStartOf="@id/tvGeneratedPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvLen">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/ic_key"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvPasswordCount"
+            app:layout_constraintStart_toEndOf="@id/ivKey"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPasswordCount"
+            style="@style/Text.Bold.Small.TextColor"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="@string/sample_num"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSettingTxt"
+        style="@style/Text.Bold.Small.TextColor"
+        android:layout_width="@dimen/standard_0"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/setting"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@id/clLengthLayout"
+        app:layout_constraintTop_toBottomOf="@id/clLengthLayout" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clIncNumLayout"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/corner_background"
+        app:layout_constraintEnd_toEndOf="@id/clLengthLayout"
+        app:layout_constraintStart_toStartOf="@id/clLengthLayout"
+        app:layout_constraintTop_toBottomOf="@id/tvSettingTxt">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/incNumTxt"
+            style="@style/Text.Bold.Small.TextColor"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="@string/include_numbers"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scIncNumBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clIncLetterLayout"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/corner_background"
+        app:layout_constraintEnd_toEndOf="@id/clLengthLayout"
+        app:layout_constraintStart_toStartOf="@id/clLengthLayout"
+        app:layout_constraintTop_toBottomOf="@id/clIncNumLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/incLetterTxt"
+            style="@style/Text.Bold.Small.TextColor"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="@string/include_letter"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scIncLetterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clIncSymbolLayout"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/corner_background"
+        app:layout_constraintEnd_toEndOf="@id/clLengthLayout"
+        app:layout_constraintStart_toStartOf="@id/clLengthLayout"
+        app:layout_constraintTop_toBottomOf="@id/clIncLetterLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/incSymbolTxt"
+            style="@style/Text.Bold.Small.TextColor"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="@string/include_symbol"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scIncSymbolBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGenerat"
+        android:layout_width="@dimen/standard_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:backgroundTint="@color/btn_color"
+        android:padding="@dimen/_17sdp"
+        android:text="@string/generate_password"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/clIncSymbolLayout"
+        app:layout_constraintStart_toStartOf="@id/clIncSymbolLayout"
+        app:layout_constraintTop_toBottomOf="@id/clIncSymbolLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

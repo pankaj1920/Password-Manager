@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="Text.Bold.Brown" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/brown_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Bold.xSmall.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Bold.Small.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Bold.Regular.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Bold.Medium.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Bold.Large.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_22sdp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Bold.Brown.White.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Bold.Regular.White.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+
+    </style>
+
+    <style name="Text.Bold.xSmall.Grey.TextColor" parent="Text.Bold.Brown">
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="EditText.Text" parent="Text.Bold.Brown">
+        <item name="android:layout_width">@dimen/standard_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autofillHints" tools:targetApi="o">false</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+    </style>
+
+    <style name="ImageView.AddPassword" parent="">
+        <item name="android:layout_width">@dimen/_17sdp</item>
+        <item name="android:layout_height">@dimen/_17sdp</item>
+        <item name="android:tint">@color/darkGrey</item>
+        <item name="android:translationX">-5dp</item>
+    </style>
+
+    <style name="Text.Bold.BackBtn" parent="Text.Bold.Brown">
+        <item name="android:text">@string/back</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:layout_margin">@dimen/_13sdp</item>
+        <item name="android:drawableStart">@drawable/ic_bcak_ios</item>
+        <item name="android:drawableTint" tools:targetApi="m">@color/black</item>
+    </style>
+
+    <style name="SearchBar.BG" parent="Text.Bold.Brown">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:layout_width">@dimen/standard_0</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:background">@drawable/bg_search_day</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/darkGrey</item>
+        <item name="android:drawableStart">@drawable/ic_sm_search</item>
+        <item name="android:drawableTint" tools:targetApi="m">@color/darkGrey</item>
+    </style>
+
+    <style name="shapableImage" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

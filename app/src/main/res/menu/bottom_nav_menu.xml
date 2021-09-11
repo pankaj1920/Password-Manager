@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_home_outline"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/shop"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_outline"
+        app:showAsAction="always"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:title="@string/create"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_outline"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_setting_outline"
+        app:showAsAction="always"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"
+        android:iconTint="@color/white"/>
+</menu>

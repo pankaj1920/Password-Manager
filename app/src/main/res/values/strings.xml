@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sign_in_txt">Sign In</string>
+    <string name="login_wlcm_txt">Welcome Back, Please enter your credentials \n to login.</string>
+    <string name="sign_wlcm_txt">Welcome to MPM, Please fill your credentials \n to signup.</string>
+    <string name="email_txt">EMAIL</string>
+    <string name="enter_e_mail">Enter E-mail</string>
+    <string name="enter_password">Enter password</string>
+    <string name="password_txt">PASSWORD</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account_txt">Don\'t have account? <font color="#FFFFFF"> Create New</font></string>
+    <string name="already_account_txt">Already have account? <font color="#FFFFFF"> Login Here</font></string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="reenter_password">Reenter password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="forgot_pass_email">
+        Enter then email associated with your account and we w\'ll send an email with OTP to reset your password.
+    </string>
+    <string name="india">India</string>
+    <string name="india_country_code"> +91 </string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="login_info">We will send you a One Time Password \n to your mobile number</string>
+    <string name="one_time_password">One Time Password</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="otp_desc">Please type the verification code \n sent to <font color="#000">8755420120</font></string>
+    <string name="verify">Verify</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="create">Create</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="a">A</string>
+    <string name="amazon">Amazon</string>
+    <string name="image_description">image_description</string>
+    <string name="search">Search</string>
+    <string name="home_info">Or select from these Pinned</string>
+    <string name="back">back</string>
+    <string name="passwords">Passwords</string>
+    <string name="add_password">Add Password</string>
+    <string name="name">Name</string>
+    <string name="email_username">Email/UserName</string>
+    <string name="enter_name_username">Enter Name/Username</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="url">Url</string>
+    <string name="create_password">Create Password</string>
+    <string name="sample_name">Emma Clarke</string>
+    <string name="mob_no">8755420120</string>
+    <string name="edit">Edit</string>
+    <string name="account">Account</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="support">Support</string>
+    <string name="support">Support</string>
+    <string name="more">More</string>
+    <string name="terms_and_condition">Terms and Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="generated_password">Generated Password</string>
+    <string name="sample_password">cD4321DFfdgb$#434D</string>
+    <string name="length">Length</string>
+    <string name="sample_num">32</string>
+    <string name="include_numbers">Include numbers</string>
+    <string name="include_letter">Include Letter</string>
+    <string name="include_symbol">Include Symbol</string>
+    <string name="facebook">Facebook</string>
+    <string name="id_username">ID/Username</string>
+    <string name="samole_email">admin@gmail.com</string>
+    <string name="website">Website</string>
+    <string name="sample_website">www.facebook.com</string>
+
+</resources>
