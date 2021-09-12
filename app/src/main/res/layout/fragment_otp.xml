@@ -76,38 +76,39 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvOtpDec"
             style="@style/Text.Bold.xSmall.Grey.TextColor"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_13sdp"
             android:layout_marginTop="@dimen/_25sdp"
             android:layout_marginEnd="@dimen/_13sdp"
-            android:gravity="center"
             android:text="@string/otp_desc"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvVerificationTxt"
             app:lineHeight="@dimen/_20sdp" />
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clOtpInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvOtpDec">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edtOtpOne"
-                android:layout_width="@dimen/_40sdp"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/bg_edt_otp"
                 android:gravity="center"
-                android:maxLength="1"
+                android:layout_marginHorizontal="@dimen/_2sdp"
                 android:inputType="number"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:focusableInTouchMode="true"
+                android:maxLength="1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/edtOtpTwo"
                 app:layout_constraintStart_toStartOf="parent"
@@ -115,12 +116,15 @@
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edtOtpTwo"
-                android:layout_width="@dimen/_40sdp"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/bg_edt_otp"
                 android:gravity="center"
                 android:maxLength="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:inputType="number"
+                android:layout_marginHorizontal="@dimen/_2sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/edtOtpThree"
                 app:layout_constraintStart_toEndOf="@id/edtOtpOne"
@@ -128,12 +132,13 @@
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edtOtpThree"
-                android:layout_width="@dimen/_40sdp"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/bg_edt_otp"
                 android:gravity="center"
                 android:maxLength="1"
                 android:inputType="number"
+                android:layout_marginHorizontal="@dimen/_2sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/edtOtpFour"
                 app:layout_constraintStart_toEndOf="@id/edtOtpTwo"
@@ -142,15 +147,42 @@
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edtOtpFour"
-                android:layout_width="@dimen/_40sdp"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/bg_edt_otp"
                 android:gravity="center"
                 android:maxLength="1"
                 android:inputType="number"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edtOtpFive"
+                app:layout_constraintStart_toEndOf="@id/edtOtpThree"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpFive"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_edt_otp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edtOtpSix"
+                app:layout_constraintStart_toEndOf="@id/edtOtpFour"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtpSix"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_edt_otp"
+                android:gravity="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginHorizontal="@dimen/_2sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/edtOtpThree"
+                app:layout_constraintStart_toEndOf="@id/edtOtpFive"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

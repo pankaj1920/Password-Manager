@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Password Manager</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="sign_in_txt">Sign In</string>
@@ -28,10 +27,10 @@
     <string name="login_info">We will send you a One Time Password \n to your mobile number</string>
     <string name="one_time_password">One Time Password</string>
     <string name="verification_code">Verification Code</string>
-    <string name="otp_desc">Please type the verification code \n sent to <font color="#000">8755420120</font></string>
+    <string name="otp_desc">Please type the verification code \n send to mobile</string>
+    <string name="mobile">8792130224</string>
     <string name="verify">Verify</string>
     <string name="home">Home</string>
-    <string name="search">Search</string>
     <string name="create">Create</string>
     <string name="setting">Setting</string>
     <string name="profile">Profile</string>
@@ -56,7 +55,6 @@
     <string name="account">Account</string>
     <string name="set_pin">Set Pin</string>
     <string name="support">Support</string>
-    <string name="support">Support</string>
     <string name="more">More</string>
     <string name="terms_and_condition">Terms and Condition</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -75,5 +73,10 @@
     <string name="samole_email">admin@gmail.com</string>
     <string name="website">Website</string>
     <string name="sample_website">www.facebook.com</string>
+    <string name="enter_mobile_no">Please enter mobile number</string>
+    <string name="enter_valid_mobile_no">Please enter valid mobile number</string>
+    <string name="success">success</string>
+    <string name="login_success">login success</string>
+    <string name="enter_six_digit_otp">Please enter 6 digit otp</string>
 
 </resources>
